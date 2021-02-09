@@ -221,36 +221,36 @@ window.addEventListener("load", () => {
 });
 
 // Building a Digital Clock
-const dateTime = document.querySelector(".dateTime");
-const tick = () => {
-  const now = new Date();
+// const dateTime = document.querySelector(".dateTime");
+// const tick = () => {
+//   const now = new Date();
 
-  let h = now.getHours();
-  let m = now.getMinutes();
-  let s = now.getSeconds();
-  let mon = now.getMonth();
+//   let h = now.getHours();
+//   let m = now.getMinutes();
+//   let s = now.getSeconds();
+//   let mon = now.getMonth();
 
-  const date = dateFns.format(now, "Do MMM YYYY");
-  h = h < 10 ? "0" + h : h;
-  m = m < 10 ? "0" + m : m;
-  s = s < 10 ? "0" + s : s;
-  //console.log(h, m, s);
-  const htmlDateTime = `<h3>${date}</h3>
-                <p><span>${h}</span>:<span>${m}</span>:<span>${s}</span></p>`;
+//   const date = dateFns.format(now, "Do MMM YYYY");
+//   h = h < 10 ? "0" + h : h;
+//   m = m < 10 ? "0" + m : m;
+//   s = s < 10 ? "0" + s : s;
+//   //console.log(h, m, s);
+//   const htmlDateTime = `<h3>${date}</h3>
+//                 <p><span>${h}</span>:<span>${m}</span>:<span>${s}</span></p>`;
 
-  dateTime.innerHTML = htmlDateTime;
-};
-setInterval(tick, 0);
+//   dateTime.innerHTML = htmlDateTime;
+// };
+// setInterval(tick, 0);
 
-//Function to deactivate the past date
+// //Function to deactivate the past date
 
-function deactivateDate() {
-  let today = new Date().toISOString().split("T")[0];
+// function deactivateDate() {
+//   let today = new Date().toISOString().split("T")[0];
 
-  document.querySelector("#taskDueDate").setAttribute("min", today);
-  document.querySelector("#editTaskDueDate").setAttribute("min", today);
-}
-deactivateDate();
+//   document.querySelector("#taskDueDate").setAttribute("min", today);
+//   document.querySelector("#editTaskDueDate").setAttribute("min", today);
+// }
+// deactivateDate();
 
 
 
