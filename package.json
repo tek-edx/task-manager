@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Ardra-rep1/TeamRepoA_T#readme",
   "devDependencies": {
+    "date-fns": "^2.17.0",
     "mocha": "^8.2.1"
   }
 }
