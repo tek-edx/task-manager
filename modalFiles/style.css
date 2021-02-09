@@ -1,0 +1,40 @@
+
+ 
+body{
+        background-color:azure;
+
+ }
+ .container{
+      width:90%;
+
+ }
+ 
+ 
+ .btn{
+    width:40%; 
+}
+
+
+.card{
+    
+      background-color: rgb(191, 228, 253);
+      margin-bottom: 2em;
+
+
+}
+footer{
+      margin-top: 20px;
+      background-color: rgb(102, 182, 243);
+      color: white;
+      text-align: center ;
+}
+
+
+
+.btnnew{
+
+      background-color:rgb(169, 223, 178);
+      width: 15%;
+     
+}
+

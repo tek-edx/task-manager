@@ -1,0 +1,330 @@
+/* Setting Universal CSS Rules */
+
+*{
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+
+  
+}
+
+/* Css for Main Tag */
+
+main{
+
+   min-height: 80vh;
+  
+}
+
+/* global variables */
+:root{
+   --mainfont: Segoe UI;
+   --shadow: 2px 2px 2px black;
+    --grey: #d6d6d6;
+   
+}
+
+body {
+   background: rgb(112, 112, 117); 
+   font-family: var(--mainfont);
+   margin: 1em 0.4em;
+}
+
+/* CSS to hide the list */
+.hidden-list {
+  display: none;
+}
+
+/* Labels */
+label{
+  font-weight: bold;
+}
+
+/*Title */
+.mtitle {
+  margin-left: 40px;
+}
+
+ #exampleModalLabel {
+  margin-left: 140px;
+}
+
+/* Long Modal Exampla */
+ #exampleModalLongTitle {
+  margin-left: 130px;
+} 
+
+/*  Buttons  */
+
+.btn {
+    padding: 0.5rem 1rem;
+     border: 0;
+}
+
+.edit-button {
+  color:grey;
+  float: right;
+}
+
+.btnSave {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btnEditSave {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.done-button {
+
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+   margin: 20px;
+}
+
+.clearTaskBtn{
+  margin: 5px 15px;
+}
+.addTaskBtn {
+  
+    position: fixed;
+    z-index: 3;
+    right: 50px;
+    bottom: 60px;
+    border-radius: 50%; 
+    margin: 0;
+    color:yellow;
+    
+    
+}
+
+.btnDelete{
+  
+   font-size: 1rem;
+  margin: 3px 5px;
+}
+
+.delete-button {
+  float: right;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 0px 8px;
+  cursor: pointer;
+}
+
+/* Button Hover */
+
+.addTaskBtn:hover{
+  
+  color:yellowgreen;
+}
+
+.btnDelete:hover{
+  opacity:1;
+}
+
+
+#labelAssignedTo{
+  color:rgb(65, 121, 158);
+}
+
+
+
+
+
+/* .addTaskBtn {
+  margin: 5px 15px;
+} */
+
+
+ 
+
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+.progress {
+  background-color: #d8d8d8;
+  height: 30px;
+}
+.progress-bar {
+  background: linear-gradient(to left, #da3068, #ff9472);
+  /*  box-shadow: 0 3px 3px -5px #F2709C */
+}
+
+.jumbotron {
+  background-color: #ddd5d8;
+  height: 30vh;
+}
+.dateTime {
+  float: right;
+  margin: 0px 10px;
+  margin-right: 20px;
+  font-size: 2em;
+  color:rgb(65, 89, 141);
+  font-family: arial;
+}
+.dateTime p{
+    font-size: 20px;
+    float:right;
+}
+.dateTime span {
+  padding: 0px;
+  /* background: rgb(187, 132, 187); */
+}
+#savedChangesModal{
+    display: hidden;
+}
+
+footer{
+  position: sticky;
+  bottom: 0px;
+}
+
+.no-task-display{
+  display: flex;
+  height: 80vh;;
+  width: 100vw;
+  border: dotted white 2px;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+i{
+  color: grey;
+  margin: 0.5em;
+  height: 40px;
+  width: 20px;
+  
+}
+
+i:hover{
+  color: green;
+}
+.delete-button:hover {
+  color: red !important;
+} 
+
+
+.search-task{
+  height: 3em;
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 0.2em;
+  color: lightslategray;
+  font-weight: bolder;
+}
+
+#sort-and-listdisplay{
+
+  display:flex;
+  width: 98%;
+  justify-content: flex-end;
+  align-items: center;
+  justify-items: baseline
+  
+}
+
+ span {
+
+  margin: 0.2em;
+}
+
+#sort-tasks{
+  height: 2em;
+  margin-left: 0.2em;
+}
+
+.slidecontainer{
+  width: 100%;
+  border: lightslategrey 1px solid;
+}
+
+#priority-range{
+
+  width: 80%;
+  margin: 1em auto;
+}
+
+.btn-inline-display{
+  display:flex;
+  
+  width: 100%;
+  height: 50px;
+  justify-content: flex-end;
+  align-items:center;
+  text-align: center;
+  
+  
+}
+
+.btn-inline-display > .badge{
+ 
+ margin-left : auto;
+}
+
+.inlist-display{
+  margin-bottom: 0.5em !important;
+
+}
+
+.inlist-display-cardheader{
+  height: 4em;
+}
+
+.grid-cards{
+  height: 30em !important;
+
+}
+
+.card-text{
+  height: 10em ;
+}
+
+.badge{
+  width: 6em;
+}
+
+@media screen and (max-width: 800px) {
+  .btn-inline-display {
+    
+    height: auto;
+    
+  }
+
+  .inlist-display-cardheader{
+    height: auto;
+    text-align: center;
+  }
+
+  .search-task{
+   width: 50%;
+  }
+  .jumbotron{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+
+  }
+
+  .clock-heading{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+ .dateTime{
+   display: none;
+ }
+}
+
