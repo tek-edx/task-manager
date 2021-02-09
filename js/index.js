@@ -1,6 +1,7 @@
 // Initializing a new TaskManager with currentId set to 0
-const taskManager = new TaskManager(0);
 
+
+const taskManager = new TaskManager(0);
 
 
 let xPosition;
