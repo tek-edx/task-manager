@@ -40,6 +40,11 @@ label{
   font-weight: bold;
 }
 
+.jumbotron{
+  padding-top: 0px;
+  
+}
+
 /*Title */
 .mtitle {
   margin-left: 40px;
@@ -225,7 +230,9 @@ i:hover{
 }
 
 #sort-and-listdisplay{
-
+ 
+ 
+ height: 100%;
   display:flex;
   width: 98%;
   justify-content: flex-end;
@@ -287,7 +294,9 @@ i:hover{
 }
 
 .card-text{
-  height: 10em ;
+ 
+  height: 42%;
+  max-height: 42%;
 }
 
 .badge{
@@ -307,8 +316,9 @@ i:hover{
   }
 
   .search-task{
-   width: 50%;
+   width: 40%;
   }
+  
   .jumbotron{
     height: auto;
     display: flex;
