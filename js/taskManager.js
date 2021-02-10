@@ -47,6 +47,7 @@ class TaskManager {
   setListDisplayStatusTrue() {
 
     localStorage.setItem("displayStatus", JSON.stringify(true));
+    
 
   }
 

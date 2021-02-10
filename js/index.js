@@ -18,6 +18,7 @@ const taskDescription = document.querySelector("#newTaskDescription");
 const taskAssignedTo = document.querySelector("#assignedTo");
 const taskStatus = document.querySelector("#status");
 const taskDueDate = document.querySelector("#taskDueDate");
+taskManager.setListDisplayStatusTrue()
 
 
 // Event handler to listen the submit event from the newwtask html page
