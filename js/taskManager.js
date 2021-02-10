@@ -2,6 +2,7 @@ class TaskManager {
   constructor() {
     this.tasks = [];
     this.setSearchTask = [];
+    
   }
   // the addTask method
   addTask(id, tName, tAssignedTo, tDescription, tDueDate, tStatus) {
@@ -316,12 +317,13 @@ class TaskManager {
   render(call = "") {
     //this.setListDisplayStatusFalse();
 
-    let displayStatus = JSON.parse(localStorage.getItem("displayStatus"));
+     let displayStatus = JSON.parse(localStorage.getItem("displayStatus"));
 
     this.setCartStorage();
+   console.log(displayStatus)
 
 
-    if (displayStatus == false) {
+    if (displayStatus == false || displayStatus == null) {
 
       if (call == "") {
         const newCardPlace = document.querySelector("#taskDisplayList");
