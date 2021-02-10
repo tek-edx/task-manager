@@ -47,7 +47,7 @@ class TaskManager {
   setListDisplayStatusTrue() {
 
     localStorage.setItem("displayStatus", JSON.stringify(true));
-    
+
 
   }
 
@@ -140,7 +140,7 @@ class TaskManager {
       badgeHolderTask.innerText = "High"
 
 
-    } else if (status > 9) {
+    } else if (status >= 9) {
       badgeHolderTask.classList.remove("badge-warning")
       badgeHolderTask.classList.remove("badge-success")
       badgeHolderTask.classList.remove("badge-secondary")
